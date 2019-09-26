@@ -5,6 +5,6 @@
 # @example
 #   include puppet_test_issue
 class puppet_test_issue (
-  Binary $some_binary
+  Optional[Binary] $some_binary = undef
 ) {
 }
