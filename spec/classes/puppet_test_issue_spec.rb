@@ -8,11 +8,11 @@ describe 'puppet_test_issue' do
       context 'with parameter' do
         let(:params) do
           {
-            some_binary: Puppet::Pops::Types::PBinaryType::Binary.from_base64('Zm9v'),
+            'some_binary' => Puppet::Pops::Types::PBinaryType::Binary.from_base64('Zm9v'),
           }
         end
 
-        it { compile }
+        it { is_expected.to compile }
       end
 
       context 'without parameter' do
