@@ -12,7 +12,7 @@ describe 'puppet_test_issue' do
           }
         end
 
-        it { is_expected.to compile }
+        it { compile }
       end
 
       context 'without parameter' do
